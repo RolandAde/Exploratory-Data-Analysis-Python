@@ -10,26 +10,7 @@ Each analysis is contained in its own Jupyter notebook and concluded with a prof
 
 ---
 
-## 📂 Project Structure
-
-```bash
-project-root/
-│
-├── eda_summary.ipynb           # Full EDA: Summary stats, category insights, etc.
-├── monthly_sales_trend.ipynb   # Monthly sales trends and April investigation
-├── dataset_description.md      # Description of the dataset columns
-├── README.md                   # This file
-
-____________________________
-
----
-
-### 📘 `dataset_description.md` — Dataset Column Descriptions
-
-```markdown
-# Dataset Column Descriptions
-
-This markdown file describes each column present in the synthetic dataset used for this analysis.
+# 📂 Dataset Column Descriptions
 
 | Column Name       | Description                                                                 |
 |-------------------|-----------------------------------------------------------------------------|
@@ -38,11 +19,9 @@ This markdown file describes each column present in the synthetic dataset used f
 | `Region`          | Region of the buyer — `North`, `South`, `East`, or `West`                   |
 | `Category`        | Broad product category — e.g., `Footwear`, `Bodywear`, etc.                 |
 | `Subcategory`     | More detailed product classification — e.g., `Sneakers`, `T-shirt`, etc.    |
-| `Unit_Price`      | Price of a single unit of product in USD                                     |
-| `Units_Sold`      | Quantity of units sold in that transaction                                   |
-| `Discount`        | Discount applied on the product (as a proportion, e.g., 0.10 = 10%)          |
-| `Sales (USD)`     | Total revenue generated for the transaction (after discount)                |
+| `Unit_Price`      | Price of a single unit of product in USD                                    |
+| `Units_Sold`      | Quantity of units sold in that transaction                                  |
+| `Discount`        | Discount applied (proportion, e.g., `0.10` = 10%)                           |
+| `Sales (USD)`     | Total revenue generated (after discount)                                    |
 
-> ⚠️ Note: Discounts are proportions, not percentages. Multiply by 100 to convert (e.g., 0.08 → 8%).
-
-
+> ⚠️ **Note**: Discounts are proportions, not percentages. Multiply by 100 to convert (e.g., `0.08` → 8%).
